@@ -12,7 +12,7 @@ public class Warehouse {
     private Long whNo;
     @Column(nullable = false,length = 50)
     private String whName;
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false,unique = true,length = 50)
     private String whCode;
     @Column(nullable = false,length = 100)
     private String whLocation;

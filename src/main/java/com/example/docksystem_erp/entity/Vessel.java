@@ -10,7 +10,7 @@ public class Vessel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long vesselNo;
-    @Column(nullable = false,length = 100)
+    @Column(nullable = false,unique = true,length = 100)
     private String vesselName;
     @Column(nullable = false,length = 100)
     private String vesselType;

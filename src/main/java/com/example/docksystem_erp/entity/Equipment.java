@@ -12,7 +12,7 @@ public class Equipment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long equipNo;
-    @Column(nullable = false,length = 100)
+    @Column(nullable = false,unique = true,length = 100)
     private String equipCode;
     @Column(nullable = false,length = 100)
     private String equipName;

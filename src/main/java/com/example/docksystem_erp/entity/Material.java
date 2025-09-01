@@ -10,7 +10,7 @@ public class Material {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long materialNo;
-    @Column(nullable = false,length = 100)
+    @Column(nullable = false,unique = true,length = 100)
     private String materialCode;
     @Column(nullable = false,length = 100)
     private String materialName;

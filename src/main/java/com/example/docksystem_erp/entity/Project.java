@@ -12,8 +12,6 @@ public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long projectNo;
-    @Column(nullable = false,length = 100)
-    private String projectName;
     @Column(nullable = false)
     private Date projectStartDate;
     @Column(nullable = false)

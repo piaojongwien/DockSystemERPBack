@@ -12,7 +12,7 @@ public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long departmentNo;
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false,unique = true,length = 50)
     private String departmentName;
     @OneToMany(mappedBy = "department")
     private List<User> users;

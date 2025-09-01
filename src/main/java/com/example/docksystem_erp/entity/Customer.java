@@ -12,7 +12,7 @@ public class Customer {
     private Long customerNo;
     @Column(nullable = false,length = 100)
     private String customerName;
-    @Column(nullable = false,length = 10)
+    @Column(nullable = false,unique = true,length = 10)
     private String customerBrn;
     @Column(nullable = false,length = 50)
     private String customerCeo;

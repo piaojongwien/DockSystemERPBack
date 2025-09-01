@@ -12,6 +12,8 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderNo;
+    @Column(nullable = false,unique = true,length = 100)
+    private String projectName;
     @Column(nullable = false)
     private Long orderPrice;
     @Column(nullable = false)
@@ -26,4 +28,7 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "vessel_no")
     private Vessel vessel;
+    @ManyToOne
+    @JoinColumn(name = "estimate_no")
+    private Estimate estimate;
 }

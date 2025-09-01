@@ -12,7 +12,7 @@ public class User {
     private Long userNo;
     @Column(nullable = false,length = 50)
     private String userName;
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false,unique = true,length = 50)
     private String userId;
     @Column(nullable = false,length = 50)
     private String userPw;

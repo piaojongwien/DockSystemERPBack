@@ -10,7 +10,7 @@ public class StandardProcess {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long spNo;
-    @Column(nullable = false,length = 50)
+    @Column(nullable = false,unique = true,length = 50)
     private String spCode;
     @Column(nullable = false,length = 100)
     private String spName;
